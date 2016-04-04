@@ -40,5 +40,5 @@ Once the project moves into development, the press release can be used as a touc
 ## Customer Quote ##
   > "I used to struggle through the process of creating a holiday newsletter every Christmas. Now, it's easy to browse my family's photos and download all the best moments." - John, Father and Family Gazette Author
   
-## Closing and Call to Action ##
+## Conclusion ##
   > Get started today by creating an account!
