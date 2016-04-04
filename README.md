@@ -31,7 +31,7 @@ Once the project moves into development, the press release can be used as a touc
 ## Solution ##
   > Log in to your Family Ledger, and save the recipe there. Tag your grandma in the recipe, and anyone who wants to see her recipes will be able to find it online. You can add multiple files - such as photos and documents - and save them as one memory. Others can add files and comments, i.e. 'Here's a photo of my version, just baked it this morning!'; 'Looks great, Grandma would be proud!' 
 
-## Quote from You ##
+## From the Founder ##
   > "Family is so important, and oftentimes social media makes it harder to connect with those who matter, rather than easier. We're excited to launch Family Ledger as a helpful tool in connecting and celebrating family ties." - Alex, son and founder at Family Ledger
 
 ## How to Get Started ##
