@@ -1,6 +1,21 @@
 angular.module('ledger', [
-  'ledger.auth'
+  'ledger.auth',
+  'ngRoute'
 ])
-.controller('ledgerController', function($scope) {
-  $scope.message = 'The app routing is working!';
+.config(function ($routeProvider) {
+  $routeProvider
+  .when('/', {
+    templateUrl: 'app/views/signin.ejs',
+    controller: 'AuthController'
+  })
+  .when('/signin', {
+    templateUrl: 'app/views/signin.ejs',
+    controller: 'AuthController'
+  })
+  .when('/signup', {
+    templateUrl: 'app/views/signup.ejs',
+    controller: 'AuthController'
+  });
 });
+
+
