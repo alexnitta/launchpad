@@ -1,5 +1,5 @@
-var handler = require('../lib/request-handler');
+var userController = require('../users/userController.js');
 
 module.exports = function (app, express) {
-  app.get('/', handler.renderIndex);
+  app.get('/', userController.renderIndex);
 };
