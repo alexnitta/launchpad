@@ -1,0 +1,32 @@
+{
+  "name": "family-ledger",
+  "description": "Family Ledger helps you connect with your relatives by establishing relationships. Share photos, stories, recipes and anything else that you want to remember together.",
+  "main": "app.js",
+  "authors": [
+    "Alex Nitta"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "mvp",
+    "family",
+    "tree"
+  ],
+  "homepage": "https://github.com/alexnitta/family-ledger",
+  "moduleType": [
+    "globals"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./client/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.3",
+    "angular": "^1.5.3",
+    "underscore": "^1.8.3"
+  }
+}
