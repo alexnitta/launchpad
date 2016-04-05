@@ -66,9 +66,9 @@ module.exports = function(grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'client/',
+          cwd: 'client/styles/',
           src: '*.css',
-          dest: 'client/',
+          dest: 'client/styles/',
           ext: '.min.css'
         }]
       }
@@ -136,13 +136,14 @@ module.exports = function(grunt) {
     'cssmin'
   ]);
 
+  grunt.registerTask('env-dev', 'env:dev');
 
   grunt.registerTask('upload', function(n) {
     if (grunt.option('prod')) {
-      grunt.task.run(['env:prod']);
+      grunt.task.run('env:prod');
     } else {
-      grunt.task.run(['env:dev']);
-      grunt.task.run([ 'server-dev' ]);
+      grunt.task.run('env:dev');
+      grunt.task.run('server-dev');
     }
   });
 

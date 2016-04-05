@@ -6,5 +6,6 @@ var util = require('../lib/utility');
 var db = require('../config/db-config');
 
 exports.renderIndex = function(req, res) {
-  res.render('index', {env: process.env.NODE_ENV}); 
+  console.log('process.env.PWD in userController: ', process.env.PWD);
+  res.render('index', {pwd: process.env.PWD}); 
 };
