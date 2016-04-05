@@ -1,21 +1,24 @@
 <!doctype HTML>
-<html ng-app="family-ledger">
+<html ng-app="ledger">
   <head>
-    <% if (/Desktop/.test(pwd)) { %> <!-- if the working directory is on Desktop, use the dev files -->
+    <% if (/Desktop/.test(pwd)) { %> <!-- dev files -->
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
     <script src="lib/underscore/underscore.js"></script>
-    <% } else { %> <!--  otherwise, use the production files -->
+    <script src="app/controllers/app.js"></script>
+    <script src="app/controllers/auth.js"></script>
+    
+    <% } else { %> <!--  production files -->
     <link rel="stylesheet" type="text/css" href="styles/style.min.css" />
     <script src="dist/family-ledger.min.js"></script>
     <script src="dist/library.min.js"></script>
     <% } %>
   </head>
   <body>
-  <h1>Family Ledger</h1>
-    <div>Hello</div>
-    <div ng-view></div>
-
+  <!-- <div ng-view> -->
+    <h1>Family Ledger</h1>
+    <div> {{ message }} </div>
+  <!-- </div> -->
   </body>
 </html>

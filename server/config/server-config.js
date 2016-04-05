@@ -11,7 +11,7 @@ var app = express();
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/../../client/views');
+app.set('views', __dirname + '/../../client/app/views');
 app.use(partials());
 app.use(bodyParser());
 app.use(express.static(__dirname + '/../../client'));
