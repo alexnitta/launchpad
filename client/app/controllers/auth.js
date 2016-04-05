@@ -10,7 +10,6 @@ angular.module('ledger.auth', [])
   var handleRequest = function (res) {
     var token = res.data ? res.data.token : null;
     if (token) {
-      console.log('JWT: ', token);
     }
     self.message = res.data.message;
   };
@@ -24,6 +23,10 @@ angular.module('ledger.auth', [])
   };
   self.getQuote = function() {
     user.getQuote()
+      .then(handleRequest, handleRequest);
+  };
+  self.profile = function() {
+    user.profile()
       .then(handleRequest, handleRequest);
   };
   self.logout = function() {
@@ -60,6 +63,9 @@ angular.module('ledger.auth', [])
   var self = this;
   self.getQuote = function() {
     return $http.get(API + '/auth/quote');
+  };
+  self.profile = function() {
+    return $http.get(API + '/profile');
   };
   self.register = function(username, password) {
     return $http.post(API + '/auth/register', {
