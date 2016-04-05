@@ -53,11 +53,8 @@ module.exports = function(grunt) {
 
     eslint: {
       target: [
-        'client/**/*.js',
-        'client/app/**/*.js',
-        'client/lib/**/*.js',
+        'client/app/*.js',
         'Gruntfile.js',
-        './*.js',
         'spec/**/*.js'
       ]
     },
@@ -92,7 +89,7 @@ module.exports = function(grunt) {
     },
 
     shell: {
-      prodServer: {
+      pushLive: {
         command: 'git push live master',
         options: {
           stdout: true,
@@ -141,6 +138,7 @@ module.exports = function(grunt) {
   grunt.registerTask('upload', function(n) {
     if (grunt.option('prod')) {
       grunt.task.run('env:prod');
+      grunt.task.run('shell:pushLive');
     } else {
       grunt.task.run('env:dev');
       grunt.task.run('server-dev');
