@@ -5,7 +5,26 @@ var util = require('../lib/utility');
 
 var db = require('../config/db-config');
 
+var passport = require ('../config/passport');
+
 exports.renderIndex = function(req, res) {
-  console.log('process.env.PWD in userController: ', process.env.PWD);
   res.render('index', {pwd: process.env.PWD}); 
+};
+
+exports.signup = function(req, res) {
+  console.log('in userController signup');
+  if (!req.body.username || !req.body.password) {
+    res.json({success: false, msg: 'Please enter a username and password.'});
+  } else {
+    var newUser = new User({
+      username: req.body.username,
+      password: req.body.password
+    });
+    newUser.save(function(err) {
+      if (err) {
+        return res.json({success: false, msg: 'Username already exists.'});
+      }
+      res.json({success: true, msg: 'Successfully created new user.'});
+    });
+  }
 };

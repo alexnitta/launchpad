@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var morgan = require('morgan');
 var ejs = require('ejs');
+var jwt = require('jwt-simple');
 
 var app = express();
 
