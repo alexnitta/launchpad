@@ -25,7 +25,8 @@ exports.add = function(req, res) {
     if (err) {
       return console.log(err);
     }  
-    return res.send(user);
+    console.log(req.params);
+    return res.send();
   });
 };
 
