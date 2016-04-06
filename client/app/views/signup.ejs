@@ -1,0 +1,13 @@
+<div ng-controller="AuthController as auth">
+<h2>Register</h2>
+
+<input type="text" ng-model="auth.username" placeholder="username"><br>
+<input type="password" ng-model="auth.password" placeholder="password"><br>
+<br>
+
+<button ng-click="auth.register()">Register</button>
+<button ng-click="auth.login()" ng-hide="auth.isAuthed()">Login</button>
+<button ng-click="auth.logout()" ng-show="auth.isAuthed()">Logout</button>
+<button ng-click="auth.getQuote()">get quote</button>
+<div>{{ auth.message }}</div> <!-- the message returned needs to be attached to res.params.message -->
+</div>

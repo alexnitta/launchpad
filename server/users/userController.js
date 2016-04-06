@@ -30,6 +30,7 @@ exports.add = function(req, res) {
   });
 };
 
+// sample data importer
 exports.import = function(req, res) {
   User.create(
     { username: 'bob',

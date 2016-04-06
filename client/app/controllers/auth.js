@@ -1,8 +1,12 @@
 angular.module('ledger.auth', [])
-.constant('API', '104.131.145.63:8000')
+.constant('API', '104.131.145.63:8000') // need to dynamically render the API endpoint based on location
 .config(function($httpProvider) {
   $httpProvider.interceptors.push('authInterceptor');
 })
+
+// Authentication is handled by JavaScript Web Tokens 
+
+// Set up services for Angular controller that will manage authorization
 .controller('AuthController', function(user, auth) {
   var self = this;
   self.isAuthed = auth.isAuthed;
@@ -32,11 +36,12 @@ angular.module('ledger.auth', [])
     return auth.isAuthed ? auth.isAuthed() : false;
   };
 })
+
 .factory('authInterceptor', function authInterceptor(API, auth) {
   return {
     request: function(config) {
       var token = auth.getToken();
-      // if (config.url.indexOf(API) === 0 && token) {
+      // if (config.url.indexOf(API) === 0 && token) { // need to dynamically render the API endpoint based on location
       if (config.url.indexOf('http://104.131.145.63:8000/') === 0 && token) {
         config.headers.Authorization = 'Bearer ' + token;
       }
@@ -59,18 +64,18 @@ angular.module('ledger.auth', [])
 .service('user', function userService($http, API, auth) {
   var self = this;
   self.profile = function() {
-    // return $http.get('API + ''/profile');
+    // return $http.get('API + ''/profile'); // need to dynamically render the API endpoint based on location
     return $http.get('http://104.131.145.63:8000/profile');
   };
   self.register = function(username, password) {
-    // return $http.post(API + '/users', {
+    // return $http.post(API + '/users', { // need to dynamically render the API endpoint based on location
     return $http.post('http://104.131.145.63:8000/users', {
       username: username,
       password: password
     });
   };
   self.login = function(username, password) {
-    // return $http.post(API + '/users', {
+    // return $http.post(API + '/users', { // need to dynamically render the API endpoint based on location
     return $http.post('http://104.131.145.63:8000/users', {
       username: username,
       password: password
