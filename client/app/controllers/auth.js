@@ -1,5 +1,5 @@
 angular.module('ledger.auth', [])
-.constant('API', 'http://test-routes.herokuapp.com')
+.constant('API', '104.131.145.63:8000')
 .config(function($httpProvider) {
   $httpProvider.interceptors.push('authInterceptor');
 })
@@ -20,10 +20,6 @@ angular.module('ledger.auth', [])
   self.register = function() {
     user.register(self.username, self.password)
     .then(handleRequest, handleRequest);
-  };
-  self.getQuote = function() {
-    user.getQuote()
-      .then(handleRequest, handleRequest);
   };
   self.profile = function() {
     user.profile()
@@ -61,20 +57,17 @@ angular.module('ledger.auth', [])
 })
 .service('user', function userService($http, API, auth) {
   var self = this;
-  self.getQuote = function() {
-    return $http.get(API + '/auth/quote');
-  };
   self.profile = function() {
     return $http.get(API + '/profile');
   };
   self.register = function(username, password) {
-    return $http.post(API + '/auth/register', {
+    return $http.post(API + '/users', {
       username: username,
       password: password
     });
   };
   self.login = function(username, password) {
-    return $http.post(API + '/auth/login', {
+    return $http.post(API + '/users', {
       username: username,
       password: password
     });

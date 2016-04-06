@@ -18,6 +18,15 @@ exports.findAll = function(req, res) {
   });
 };
 
+exports.add = function(req, res) {
+  User.create(req.body, function (err, user) {
+    if (err) {
+      return console.log(err);
+    }
+    return res.send(user);
+  });
+};
+
 exports.import = function(req, res) {
   User.create(
     { username: 'bob',
@@ -66,7 +75,7 @@ exports.add = function(req, res) {
   });
 };
 
-exports.delete = function(req, res){
+exports.delete = function(req, res) {
   var id = req.params.id;
   User.remove({'_id': id}, function(result) {
     return res.send(result);
