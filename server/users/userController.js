@@ -12,7 +12,6 @@ exports.renderIndex = function(req, res) {
 };
 
 exports.signup = function(req, res) {
-  console.log('in userController signup');
   if (!req.body.username || !req.body.password) {
     res.json({success: false, msg: 'Please enter a username and password.'});
   } else {
@@ -28,3 +27,7 @@ exports.signup = function(req, res) {
     });
   }
 };
+
+exports.import = function(req, res) {
+  
+}
