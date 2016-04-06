@@ -12,15 +12,20 @@ exports.renderIndex = function(req, res) {
 };
 
 exports.findAll = function(req, res) {
-  // res.send([{
-  //   username: 'default',
-  //   password: 'default'
-  // }]);
   User.find({}, function(err, results) {
     if (err) {
       console.log('error in userController: ', err);
     }
     return res.send(results);
+  });
+};
+
+exports.add = function(req, res) {
+  User.create(req.body, function (err, user) {
+    if (err) {
+      return console.log(err);
+    }  
+    return res.send(user);
   });
 };
 

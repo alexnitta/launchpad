@@ -57,7 +57,8 @@ angular.module('ledger', [
   return {
     request: function(config) {
       var token = auth.getToken();
-      if (config.url.indexOf(API) === 0 && token) {
+      // if (config.url.indexOf(API) === 0 && token) {
+      if (config.url.indexOf('http://104.131.145.63:8000/') === 0 && token) {
         config.headers.Authorization = 'Bearer ' + token;
       }
       return config;
@@ -79,16 +80,19 @@ angular.module('ledger', [
 .service('user', function userService($http, API, auth) {
   var self = this;
   self.profile = function() {
-    return $http.get(API + '/profile');
+    // return $http.get('API + ''/profile');
+    return $http.get('http://104.131.145.63:8000/profile');
   };
   self.register = function(username, password) {
-    return $http.post(API + '/users', {
+    // return $http.post(API + '/users', {
+    return $http.post('http://104.131.145.63:8000/users', {
       username: username,
       password: password
     });
   };
   self.login = function(username, password) {
-    return $http.post(API + '/users', {
+    // return $http.post(API + '/users', {
+    return $http.post('http://104.131.145.63:8000/users', {
       username: username,
       password: password
     });
