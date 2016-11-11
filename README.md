@@ -17,31 +17,31 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## ** A work in progress ** ##
-  > This project is not yet functional. What follows is essentially a brainstorm for a future product. 
+This project is not yet functional. What follows is essentially a brainstorm for a future product. 
  
-## Connect with your relatives ##
-  > Family Ledger helps you connect with your relatives by establishing relationships. Share photos, stories, recipes and anything else that you want to remember together.
+### Connect with your relatives ###
+Family Ledger helps you connect with your relatives by establishing relationships. Share photos, stories, recipes and anything else that you want to remember together.
 
-## Who is it for? ##
-  > Anyone who wants to share with family and store memories in a central, accessible place.
+### Who is it for? ###
+Anyone who wants to share with family and store memories in a central, accessible place.
 
-## Summary ##
-  > Our families are the foundation of our identity. With family, we form a lasting connection with the past and the future. To remember loved ones and share new experiences, Family Ledger helps you build a secure online family tree. Once this network is established, you can search and share content based upon your relationships with your family members.
+### Summary ###
+Our families are the foundation of our identity. With family, we form a lasting connection with the past and the future. To remember loved ones and share new experiences, Family Ledger helps you build a secure online family tree. Once this network is established, you can search and share content based upon your relationships with your family members.
 
-## Problem ##
-  > Grandma makes the best peach pie you've ever tasted. Her recipe has been passed down to you on an index card, edgeworn and written in her imperfect but endearing cursive. How can you make sure that your whole family has access to Grandma's peach pie recipe? You could snap a photo of it and email it to everyone, which is easy, or type it out and send a document instead, which is more searchable but takes a bit longer. Either way, it will most likely get lost in your family's email inboxes, and they probably won't find it if they need it a month from now. 
+### Problem ###
+Grandma makes the best peach pie you've ever tasted. Her recipe has been passed down to you on an index card, edgeworn and written in her imperfect but endearing cursive. How can you make sure that your whole family has access to Grandma's peach pie recipe? You could snap a photo of it and email it to everyone, which is easy, or type it out and send a document instead, which is more searchable but takes a bit longer. Either way, it will most likely get lost in your family's email inboxes, and they probably won't find it if they need it a month from now. 
 
-## Solution ##
-  > Log in to your Family Ledger, and save the recipe there. Tag your grandma in the recipe, and anyone who wants to see her recipes will be able to find it online. You can add multiple files - such as photos and documents - and save them as one memory. Others can add files and comments, i.e. 'Here's a photo of my version, just baked it this morning!'; 'Looks great, Grandma would be proud!' 
+### Solution ###
+Log in to your Family Ledger, and save the recipe there. Tag your grandma in the recipe, and anyone who wants to see her recipes will be able to find it online. You can add multiple files - such as photos and documents - and save them as one memory. Others can add files and comments, i.e. 'Here's a photo of my version, just baked it this morning!'; 'Looks great, Grandma would be proud!' 
 
-## From the Founder ##
-  > "Family is so important, and oftentimes social media makes it harder to connect with those who matter, rather than easier. We're excited to launch Family Ledger as a helpful tool in connecting and celebrating family ties." - Alex, son and founder at Family Ledger
+### From the Founder ###
+"Family is so important, and oftentimes social media makes it harder to connect with those who matter, rather than easier. We're excited to launch Family Ledger as a helpful tool in connecting and celebrating family ties." - Alex, son and founder at Family Ledger
 
-## How to Get Started ##
-  > To get started, simply create a username and password. Invite your family members, then start creating relationships and uploading your memories. You will be able to decide who sees each memory, based on relationships, i.e. 'immediate family only', 'siblings', or 'everyone in my tree'.
+### How to Get Started ###
+To get started, simply create a username and password. Invite your family members, then start creating relationships and uploading your memories. You will be able to decide who sees each memory, based on relationships, i.e. 'immediate family only', 'siblings', or 'everyone in my tree'.
 
-## Customer Quote ##
-  > "I used to struggle through the process of creating a holiday newsletter every Christmas. Now, it's easy to browse my family's photos and download all the best moments." - John, Father and Family Gazette Author
+### Customer Quote ###
+"I used to struggle through the process of creating a holiday newsletter every Christmas. Now, it's easy to browse my family's photos and download all the best moments." - John, Father and Family Gazette Author
   
-## Conclusion ##
-  > Get started today by creating an account!
+### Conclusion ###
+Get started today by creating an account!
