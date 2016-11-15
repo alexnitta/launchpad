@@ -1,5 +1,5 @@
 {
-  "name": "family-ledger",
+  "name": "family-ledger-client",
   "version": "1.0.1",
   "description": "Family Ledger helps you connect with your relatives by establishing relationships. Share photos, stories, recipes and anything else that you want to remember together.",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexnitta/family-ledger.git"
@@ -26,11 +26,18 @@
   },
   "homepage": "https://github.com/alexnitta/family-ledger#readme",
   "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://localhost:3001/",
   "devDependencies": {
+    "flow-bin": "^0.35.0",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "react": "^15.3.2",
+    "react-bootstrap": "^0.30.6",
     "react-dom": "^15.3.2"
-  },
+  }
 }
