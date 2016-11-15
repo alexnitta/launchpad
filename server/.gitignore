@@ -1,22 +1,3 @@
-### Client
-
-# dependencies
-node_modules
-
-# testing
-coverage
-
-# production
-build
-
-# misc
-.DS_Store
-.env
-npm-debug.log
-
-
-### Server
-
 # IDE files
 server/.idea
 
@@ -42,6 +23,8 @@ server/.grunt
 server/build/Release
 
 # Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 server/node_modules
 
 # Users Environment Variables
