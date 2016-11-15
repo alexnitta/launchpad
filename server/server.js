@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') {
 
 app.get('/test/', function (req, res) {
   res.json({
-    message: 'Welcome to prairie-dice!'
+    message: 'Welcome to your API server!'
   });
 });
 

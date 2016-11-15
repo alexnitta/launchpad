@@ -1,18 +1,18 @@
 {
-  "name": "family-ledger-server",
-  "version": "1.0.1",
+  "name": "launchpad-server",
+  "version": "0.0.1",
   "private": true,
-  "description": "API server for Family Ledger application",
+  "description": "API server for Launchpad app",
   "author": "Alex Nitta",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "server.js",
   "bugs": {
-    "url": "https://github.com/alexnitta/family-ledger/issues"
+    "url": "https://github.com/alexnitta/launchpad/issues"
   },
-  "homepage": "https://github.com/alexnitta/family-ledger#readme",
+  "homepage": "https://github.com/alexnitta/launchpad#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexnitta/family-ledger.git"
+    "url": "git+https://github.com/alexnitta/launchpad.git"
   },
   "scripts": {
     "start": "nf start -p 3000",
