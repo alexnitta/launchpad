@@ -6,6 +6,7 @@
 * React / Webpack (from [create-react-app](https://github.com/facebookincubator/create-react-app))
 * [React-Bootstrap](http://react-bootstrap.github.io/)
 * Express, driven by Swagger (from [swagger-node](https://github.com/swagger-api/swagger-node/))
+* your choice of database (none included)
 
 ### Setup:
 * Package & Server Setup
